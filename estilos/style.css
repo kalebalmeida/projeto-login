@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Paleta de cores 
+
+azul marinho: #1D1661;
+azul-roxeado: #3328AD; 
+*/
+:root{
+    --azul-marinho: #1D1661;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html{
+    background-color: var(--azul-marinho);
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 500px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+}
+section#login > div#imagem{
+    display: block;
+    background: #3328AD url('../imagens/pexels-dinnow-9444476.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
