@@ -7,6 +7,7 @@ azul-roxeado: #3328AD;
 */
 :root{
     --azul-marinho: #1D1661;
+    --azul-roxeado: #3328AD;
 }
 
 *{
@@ -38,6 +39,8 @@ section#login{
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 section#login > div#imagem{
     display: block;
