@@ -8,6 +8,8 @@ azul-roxeado: #3328AD;
 :root{
     --azul-marinho: #1D1661;
     --azul-roxeado: #3328AD;
+    --azul-claro: #0EF0D8;
+    --azul-roxeado-escuro: #20196d;
 }
 
 *{
@@ -63,4 +65,55 @@ div#formulario > h1{
 div#formulario > p{
     font-size: 0.8em;
 }
+form > div.campo{
+    background-color: var(--azul-marinho);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+div.campo > label{
+    display: none;
+}
 
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    padding: 8px;
+    width: 100%;
+    background-color: var(--azul-roxeado);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover{
+    background-color: var(--azul-roxeado-escuro);
+
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #fff;
+    color: #09796d;
+    text-decoration: none;
+    border: 1px solid var(--azul-marinho);
+    border-radius: 5px;
+}
+
+form > a.botao:hover{
+    background-color: #0db3a2;
+    
+}
+
+form > a.botao > span{
+    font-size: 0.8em;
+}
